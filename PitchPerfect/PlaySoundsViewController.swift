@@ -55,6 +55,7 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
+        setupButtons()
         // Do any additional setup after loading the view.
     }
     
@@ -62,6 +63,14 @@ class PlaySoundsViewController: UIViewController {
         configureUI(.notPlaying)
     }
     
+    func setupButtons() {
+        snailButton.imageView?.contentMode = .scaleAspectFit
+        chipmunkButton.imageView?.contentMode = .scaleAspectFit
+        rabbitButton.imageView?.contentMode = .scaleAspectFit
+        vaderButton.imageView?.contentMode = .scaleAspectFit
+        echoButton.imageView?.contentMode = .scaleAspectFit
+        reverbButton.imageView?.contentMode = .scaleAspectFit
+    }
 
     /*
     // MARK: - Navigation
